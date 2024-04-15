@@ -59,7 +59,7 @@ public class AccountServiceImp implements AccountService{
 
         if(account.getAccount_balance()<amount)
         {
-            throw new RuntimeException("insufficient balance");
+            throw new RuntimeException("insufficient balance related Account");
         }
         double total=account.getAccount_balance()-amount;
         account.setAccount_balance(total);
